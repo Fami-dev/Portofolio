@@ -13,6 +13,29 @@
 body {
     background-color: var(--mainColor);
 }
+/* Back To Top */
+
+#tombolNya {
+  z-index: 99; /* agar tak tersembunyi di balik element lain */
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  border: none;
+  outline: none;
+  background-color: var(--mainColor);
+  box-shadow: 0 0 5px black;
+}
+
+#tombolNya i {
+  color: white;
+}
+
 /* Navigasi Bar */
 
 .nav{
@@ -40,7 +63,7 @@ body {
 
 .navigasi-logo a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: white;
     font-weight: bold;
 }
@@ -152,35 +175,55 @@ body {
 
 /* Header */
 
+.section1 {
+  margin-left: 1rem;
+}
+
 .judul h1 {
     font-family: "Archivo Black", sans-serif;
     margin-top: 50px;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .uploaders h5 {
     font-family: "Poppins", sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .halaman p {
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 .artikel {
     margin: ;
 }
+.image1 {
+    height:300px;
+    width:350px;
+    margin-top:30px;
+}
+.image2 {
+    height:250px;
+    width:350px;
+    margin-top:30px;
+}
+.image3 {
+    height:200px;
+    width:350px;
+    margin-top:30px;
+}
 .daftarisi{
     background-color: white;
     border-radius: 10px;
+    margin: 20px;
     padding: 10px;
 }
 .daftarisi h4{
     color: black;
     font-family: "Poppins", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 .daftarisi ol li {
     font-family: "Poppins", sans-serif;
     color: black;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 10px 0 10px 0;
 }
 .daftarisi ol li a {
@@ -188,7 +231,7 @@ body {
 }
 .artikel p{
     font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 .artikel h3 {
     font-size: 1.5rem;
@@ -198,36 +241,73 @@ body {
 }
 .artikel h5 {
     font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     margin: 10px 0 10px 0;
 }
 .artikel ul li {
     margin: 0 20px 0 20px;
     font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 .artikel ul li b{
     font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .artikel ol li {
     margin: 0 20px 0 20px;
     font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 .artikel ol li b{
     font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+}
+.artikelimage {
+    height:100%;
+    width:100%;
+    margin-top:30px
 }
 /* Header End */
+.section3 {
+  margin: 20px;
+}
+.badge{
+  padding: ;
+}
+.badge p{
+  background-color: white;
+  color:black;
+  box-shadow: 0 0 5px white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 5px;
+}
 
+.badgegambar img {
+  height: 75px;
+  width: 75px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+}
+.badgeinfo h5{
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.badgeinfo p {
+  font-size: 0.8rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
 /* Copyright */
 
 .Copyright {
     background-color: #181930;
-    padding: 30px;
+    padding: 20px;
 }
 .Copyright h2{
     font-family: "Poppins", sans-serif;
@@ -239,7 +319,88 @@ body {
 /* Responsive Navbar */
 
 @media (min-width: 800px){
+.judul h1{
+    font-size: 3.5rem;
+}
+.uploaders h5 {
+    font-size: 2rem;
+}
+.halaman p {
+    font-size: 2rem;
+}
+.image1 {
+    height:400px;
+    width:500px;
+    margin-top:30px;
+}
+.image2 {
+    height:400px;
+    width:600px;
+    margin-top:30px;
+}
+.image3 {
+    height:400px;
+    width:600px;
+    margin-top:30px;
+}
+.daftarisi h4{
+    font-size: 1.4rem;
+}
+.daftarisi ol li {
+    font-size: 1.1rem;
+}
+.daftarisi ol li a {
+    font-family: "Poppins", sans-serif;
+}
+.artikel p{
+    font-size: 1.2rem;
+}
+.artikel h3 {
+    font-size: 1.8rem;
+}
+.artikel h5 {
+    font-size: 1.3rem;
+}
+.artikel ul li {
+    font-size: 1.2rem;
+}
+.artikel ul li b{
+    font-size: 1.3rem;
+}
 
+.artikel ol li {
+    font-size: 1.2rem;
+}
+.artikel ol li b{
+    font-size: 1.2rem;
+}
+  .badge p{
+  background-color: white;
+  color:black;
+  box-shadow: 0 0 5px white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.badgegambar img {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+}
+.badgeinfo h5{
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.badgeinfo p {
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
 }
 
 @media (min-width: 767px){
