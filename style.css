@@ -10,6 +10,9 @@
     --mainColor: #1f1f3d;
     --mainHover: #ff5540;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: var(--mainColor);
 }
